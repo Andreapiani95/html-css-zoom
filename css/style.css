@@ -22,12 +22,13 @@ header{
 }
 
 footer{
-    height: 120px;
+    height: 80px;
     width: 100vw;
+    background-color: #222222;
 }
 
 main{
-    height: calc(100vh - 120px - 30px);
+    height: calc(100vh - 80px - 30px);
     width: 100%;
 }
 
@@ -54,21 +55,65 @@ header{
 
 .flex-box{
     display: flex;
-    justify-content: center;
 }
 
 .flex-1{
   flex-wrap: wrap;
+  justify-content: center;
 }
 
+.flex-2{
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
 .columns{
     width: calc(100% / 8);
     height: 115px;
     margin: 5px;    
 }
 
+.left{
+    width: 20%;
+}
+
 img{
     object-fit: contain;
+}
+
+.flex-2 button{
+    height: 100%;
+    background-color: #222222;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.flex-2 .fa-solid-big{
+    font-size: 1.5em;
+    padding-bottom: 3px;
+}
+
+.flex-2 .fa-solid-small{
+    font-size: 0.5em;
+}
+
+.right{
+    background-color: #4A4A4A;
+    width: 10%;
+    height: 100%;
+}
+.right button{
+    width: 100%;
+    padding: 10px;
+    background-color: #4A4A4A;
+}
+
+.red-text{
+    color: red;
+}
+
+.green-text{
+    color: green;
 }
 /*
 
@@ -77,12 +122,10 @@ img{
 */
 
 .debug main{
-    background-color: pink;
+    background-color: #000000;
 }
 
-.debug footer{
-    background-color: lightgreen;
-}
+
 
 .debug .columns{
     background-color: lime;
